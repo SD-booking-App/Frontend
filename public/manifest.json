@@ -1,0 +1,42 @@
+{
+  "name": "Smiths Desk Booking",
+  "short_name": "SD",
+  "display": "standalone",
+  "orientation": "portrait",
+  "purpose": "any maskable",
+  "theme_color": "#364F59",
+  "background_color": "#00CCFF",
+  "start_url": "/",
+  "scope":".",
+  "icons": [
+
+    {
+      "src": "/logo.png",
+      "sizes": "80x80",
+      "type": "image/png"
+    },
+
+    {
+      "src": "/logo-150.png",
+      "sizes": "168x166",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-250.png",
+      "sizes": "306x292",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/maskable.png",
+      "sizes": "306x292",
+      "type": "image/png",
+      "purpose":"maskable"
+    }
+
+  ]
+}
