@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+
+  --background:#FFFAF7;
+  --navbar:#002F7E;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
+
+/* html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+.grid-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  /* add position absolute */
+}
+
+.grid-workspace {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  max-height: 100%;
+  background-color: #ccc;
+  overflow: auto;
+}
+
+.grid-box {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-image: url(/assets/logo.png);
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.drag-handle {
+  cursor: move;
+  margin-bottom: 8px;
+}
+
+.add-box {
+  position: absolute;
+  top: 20px;
+  left: 820px;
+}
+
+.Desk-icon {
+  cursor: pointer;
+  font-size: 48px;
+  color: #fff;
+  background-image: url(/assets/logo.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.rocket-icon:hover {
+  background-color: #006bb3;
+}
+
+.selected {
+  box-shadow: 0 0 0 2px blue;
+}
+.grid-box.selected {
+  border: 2px solid #007aff;
+}
+
+.grid-box.group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
