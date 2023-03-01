@@ -1,0 +1,62 @@
+.grid-workspace {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  max-height: 100%;
+  background-color: #ccc;
+  overflow: auto;
+}
+
+.grid-box {
+  position: absolute;
+  /* background-color: #fff; */
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  /* color: #fff; */
+  /* background-color: #0077cc; */
+  /* border-radius: 50%; */
+  background-image: url(Desk1.png);
+  background-repeat: no-repeat;
+  
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.drag-handle {
+  cursor: move;
+  margin-bottom: 8px;
+}
+
+.add-box {
+  position: absolute;
+  top: 20px;
+  left: 820px;
+}
+
+.rocket-icon {
+  cursor: pointer;
+  font-size: 48px;
+  color: #fff;
+  background-image: url(Desk1.png);
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.rocket-icon:hover {
+  background-color: #006bb3;
+}
